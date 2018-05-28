@@ -1124,13 +1124,13 @@ class NumericInput extends Component
             return (
                 <span {...attrs.wrap}>
                     <InputTag {...attrs.input}/>
-                    <b {...attrs.btnUp}>
-                        <i style={ noStyle ? null : css.minus }/>
-                        <i style={ noStyle ? null : css.plus }/>
-                    </b>
-                    <b {...attrs.btnDown}>
-                        <i style={ noStyle ? null : css.minus }/>
-                    </b>
+                    <button {...attrs.btnUp}>
+                        <div style={ noStyle ? null : css.minus }/>
+                        <div style={ noStyle ? null : css.plus }/>
+                    </button>
+                    <button {...attrs.btnDown}>
+                        <div style={ noStyle ? null : css.minus }/>
+                    </button>
                 </span>
             )
         }
@@ -1138,12 +1138,12 @@ class NumericInput extends Component
         return (
             <span {...attrs.wrap}>
                 <InputTag {...attrs.input}/>
-                <b {...attrs.btnUp}>
-                    <i style={ noStyle ? null : css.arrowUp }/>
-                </b>
-                <b {...attrs.btnDown}>
-                    <i style={ noStyle ? null : css.arrowDown }/>
-                </b>
+                <button {...attrs.btnUp}>
+                    <div style={ noStyle ? null : css.arrowUp }/>
+                </button>
+                <button {...attrs.btnDown}>
+                    <div style={ noStyle ? null : css.arrowDown }/>
+                </button>
             </span>
         );
     }
